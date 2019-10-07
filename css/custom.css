@@ -112,3 +112,8 @@ li.li_slide1 {
         transform: translate(0, 40px);
     }
 }
+
+.company-title {
+    font-size: 56px;
+
+}
