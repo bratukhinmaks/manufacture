@@ -1,0 +1,50 @@
+
+.videoThumbnail.small{
+    max-width: 500px !important;
+}
+.slide1_video{
+    margin-top:-300px;
+}
+a.button.thin-stroke{
+    color:white !important;
+    margin-top:20px;
+}
+li.li_slide1{
+    text-align: center;
+    margin-top: 25px;
+}
+.bg-grey{
+    background-color:lightgrey ;
+    opacity: 1;
+    color:black;
+}
+.ps-un{
+    position: unset!important;
+}
+.active{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.panel.top{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    box-shadow: 1px 1px 1px grey;
+}
+.contact_link{
+    color: #61caff;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.form-control{
+    display: flex;
+    width:90%;
+    padding:15px 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.panel.bottom{
+    background-color: black;
+    color:white;
+}
