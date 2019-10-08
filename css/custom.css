@@ -26,7 +26,7 @@ li.li_slide1 {
     position: unset !important;
 }
 
-.active {
+.chosen {
     font-weight: 600;
     text-decoration: underline;
 }
