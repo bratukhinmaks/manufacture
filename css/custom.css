@@ -75,9 +75,11 @@ li.li_slide1 {
 
 }
 
-.home-text {}
+.home-text {
+}
 
-.home-title {}
+.home-title {
+}
 
 .home-button {
     padding: 15px 20px;
@@ -204,6 +206,7 @@ li.li_slide1 {
     }
 }
 
+<<<<<<< HEAD
 .collection {
     text-shadow: 0 0 4px #333333;
 }
@@ -259,3 +262,53 @@ li.li_slide1 {
     cursor: pointer;
     transform: rotate(225deg);
 }
+=======
+.main-form-title {
+    text-align: center;
+    text-shadow: 1px -1px black;
+}
+
+.main-form-text {
+    text-align: center;
+    text-shadow: 1px -1px black;
+    margin-bottom: 40px;
+}
+
+.main-info-text {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.main-info {
+    text-shadow: 1px -1px black;
+}
+
+.main-info p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.main-info-link {
+    margin-top: 19px;
+    color: #ffe4c3;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-info-map {
+        width: 280px;
+    }
+
+    .main-form-title {
+        font-size: 30px;
+    }
+
+    .main-info-title {
+        font-size: 30px;
+    }
+}
+>>>>>>> 7bb12f3d803b8ebd653725d59e699876329d7241
