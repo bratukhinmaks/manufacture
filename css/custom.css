@@ -32,7 +32,7 @@ li.li_slide1 {
 }
 
 .panel.top {
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     color: black;
     box-shadow: -1px 1px 3px lightgrey;
@@ -99,8 +99,13 @@ li.li_slide1 {
     position: absolute;
     top: 390px;
     display: block;
-    width: 100%;
-    animation: arrow-animation 1.4s ease-in-out infinite;
+    margin-left: 48%;
+    animation: arrow-animation 2.4s ease-in-out infinite;
+}
+
+.animated-arrow img {
+    width: 50px;
+    height: 50px;
 }
 
 @keyframes arrow-animation {
@@ -206,7 +211,6 @@ li.li_slide1 {
     }
 }
 
-<<<<<<< HEAD
 .collection {
     text-shadow: 0 0 4px #333333;
 }
@@ -262,7 +266,7 @@ li.li_slide1 {
     cursor: pointer;
     transform: rotate(225deg);
 }
-=======
+
 .main-form-title {
     text-align: center;
     text-shadow: 1px -1px black;
@@ -311,4 +315,93 @@ li.li_slide1 {
         font-size: 30px;
     }
 }
->>>>>>> 7bb12f3d803b8ebd653725d59e699876329d7241
+
+.round {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: rotate(90deg);
+}
+
+#cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    top:-3px;
+}
+
+#cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 15px;
+    animation: bounceAlpha 1.4s ease-in-out infinite ;
+}
+
+.segunda {
+    margin-left: 8px;
+}
+
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round:hover .arrow {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round:hover .arrow.primera {
+    animation-name: bounceAlpha;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
