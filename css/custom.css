@@ -115,5 +115,42 @@ li.li_slide1 {
 
 .company-title {
     font-size: 56px;
+    white-space: nowrap;
+}
 
+.company-text {
+    text-shadow: 1px -1px black;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.company-text p {
+    font-size: 26px;
+}
+
+.company-img {
+    width: 170px;
+    position: absolute;
+    opacity: .85;
+}
+
+.company-img-container {
+    position: relative;
+}
+
+.company-img-1 {
+    top: 150px;
+    left: 50px;
+    transform: rotate(-25deg);
+}
+
+.company-img-2 {
+    top: 330px;
+    right: 25px;
+    transform: rotate(20deg);
+}
+
+.company-img-3 {
+    top: 0;
+    transform: rotate(5deg);
 }
