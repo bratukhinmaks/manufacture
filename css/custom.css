@@ -38,6 +38,46 @@ li.li_slide1 {
     box-shadow: -1px 1px 3px lightgrey;
 }
 
+.hamburger {
+    width: 20px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .button {
+    background-color: #fff;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.hamburger span:nth-child(1) {
+    top: 7px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 15px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 22px;
+}
+
+.sidebar-close {
+    font-size: 36px !important;
+    transform: rotate(45deg) !important;
+    transition: all ease-in-out .4s !important;
+}
+
+.sidebar-close:hover {
+    transform: rotate(225deg) !important;
+}
+
 .contact_link {
     color: #61caff;
     font-size: 25px;
