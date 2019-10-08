@@ -75,11 +75,9 @@ li.li_slide1 {
 
 }
 
-.home-text {
-}
+.home-text {}
 
-.home-title {
-}
+.home-title {}
 
 .home-button {
     padding: 15px 20px;
@@ -234,7 +232,7 @@ li.li_slide1 {
     display: none;
     justify-content: center;
     align-items: center;
-    transition: .3s ease all;
+    animation: appear 1s ease-in-out;
 }
 
 .modal {
@@ -265,6 +263,17 @@ li.li_slide1 {
 .close-modal:hover {
     cursor: pointer;
     transform: rotate(225deg);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .main-form-title {
@@ -329,7 +338,7 @@ li.li_slide1 {
     width: 100%;
     cursor: pointer;
     position: absolute;
-    top:-3px;
+    top: -3px;
 }
 
 #cta .arrow {
@@ -344,7 +353,7 @@ li.li_slide1 {
     height: 12px;
     background-size: contain;
     top: 15px;
-    animation: bounceAlpha 1.4s ease-in-out infinite ;
+    animation: bounceAlpha 1.4s ease-in-out infinite;
 }
 
 .segunda {
@@ -360,14 +369,17 @@ li.li_slide1 {
         opacity: 1;
         transform: translateX(0px) scale(1);
     }
+
     25% {
         opacity: 0;
         transform: translateX(10px) scale(0.9);
     }
+
     26% {
         opacity: 0;
         transform: translateX(-10px) scale(0.9);
     }
+
     55% {
         opacity: 1;
         transform: translateX(0px) scale(1);
@@ -403,5 +415,3 @@ li.li_slide1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-
