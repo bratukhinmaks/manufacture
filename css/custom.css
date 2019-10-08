@@ -154,3 +154,52 @@ li.li_slide1 {
     top: 0;
     transform: rotate(5deg);
 }
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+    .company-img {
+        position: relative;
+        margin-right: 3%;
+    }
+
+    .company-img-1 {
+        top: initial;
+        left: initial;
+        transform: rotate(0);
+    }
+
+    .company-img-2 {
+        top: initial;
+        right: initial;
+        transform: rotate(0);
+    }
+
+    .company-img-3 {
+        top: initial;
+        transform: rotate(0);
+    }
+
+    .company-title {
+        font-size: 36px;
+    }
+
+    .company-text p {
+        font-size: 20px;
+
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .company-img {
+        display: none;
+    }
+
+    .company-title {
+        font-size: 36px;
+        white-space: unset;
+    }
+
+    .company-text p {
+        font-size: 20px;
+
+    }
+}
