@@ -1,457 +1,108 @@
-.videoThumbnail.small {
-    max-width: 500px !important;
+.slides,
+.slides p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.slides h1,
+.slides h2,
+.slides h3,
+.slides h4,
+.slides h5,
+.slides h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+}
+.about-us-img{
+    width:60%;
 }
 
-.slide1_video {
-    margin-top: -300px;
-}
-
-a.button.thin-stroke {
-    color: white !important;
-    margin-top: 20px;
-}
-
-li.li_slide1 {
-    text-align: center;
-    /* margin-top: 25px; */
-}
-
-.bg-grey {
-    background-color: lightgrey;
-    opacity: 1;
-    color: black;
-}
-
-.ps-un {
-    position: unset !important;
-}
-
-.chosen {
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.panel.top {
-    background-color: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    box-shadow: -1px 1px 3px lightgrey;
-}
-
-.hamburger {
-    width: 20px;
-    height: 30px;
-    position: relative;
-}
-
-.hamburger .button {
-    background-color: #fff;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 80%;
-    position: absolute;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-}
-
-.hamburger span:nth-child(1) {
-    top: 7px;
-}
-
-.hamburger span:nth-child(2) {
-    top: 15px;
-}
-
-.hamburger span:nth-child(3) {
-    top: 22px;
-}
-
-.sidebar-close {
-    font-size: 36px !important;
-    transform: rotate(45deg) !important;
-    transition: all ease-in-out .4s !important;
-}
-
-.sidebar-close:hover {
-    transform: rotate(225deg) !important;
-}
-
-.contact_link {
-    color: #61caff;
-    font-size: 25px;
-    font-weight: 600;
-    padding-top: 20px;
-}
-
-.form-control {
-    display: flex;
-    width: 90%;
-    padding: 15px 10px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.panel.bottom {
-    background-color: black;
-    color: white;
-}
-
-.home {
-    background-color: rgba(255, 255, 255, .6);
-    color: #fff;
-    text-shadow: -2px 0 2px rgba(50, 1, 54, .6);
-}
-
-.home-content {
-    position: relative;
-}
-
-.home-text,
-.home-title,
-.home-button {
-    letter-spacing: 0.02em;
+.promo-item {
+    display:flex;
+    margin-bottom: 30px;
 
 }
-
-.home-text {}
-
-.home-title {}
-
-.home-button {
-    padding: 15px 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    opacity: .7;
-    color: black;
-    text-shadow: none;
+img.promo-item__img  {
+    max-width: 80px ;
+    max-height: 80px;
+    margin: 0 20px;
 }
 
-.home-button:hover {
-    cursor: pointer;
-    opacity: 1;
+h4.promo-item__header {
+    font-size: 17px;
 }
 
-.animated-arrow {
-    position: absolute;
-    top: 390px;
-    display: block;
-    margin-left: 48%;
-    animation: arrow-animation 2.4s ease-in-out infinite;
+p.promo-item-description {
+    font-size: 15px;
 }
 
-.animated-arrow img {
-    width: 50px;
-    height: 50px;
-}
-
-@keyframes arrow-animation {
-
-    0%,
-    100% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(0, 40px);
-    }
-}
-
-.company-title {
-    font-size: 56px;
-    white-space: nowrap;
-}
-
-.company-text {
-    text-shadow: 1px -1px black;
-    line-height: 1.4;
+.promo-item__content {
     text-align: left;
 }
 
-.company-text p {
-    font-size: 26px;
+.cooperation-img {
+    width:80%;
 }
 
-.company-img {
-    width: 170px;
-    position: absolute;
-    opacity: .85;
+.flip-card {
+    background-color: transparent;
+    min-height: 700px;
+    width: 100%;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
 
-.company-img-container {
+.flip-card ul {
+    text-align: left;
+    padding: 10px;
+}
+
+.flip-card ul li {
+    margin-bottom: 5px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
-}
-
-.company-img-1 {
-    top: 150px;
-    left: 50px;
-    transform: rotate(-25deg);
-}
-
-.company-img-2 {
-    top: 330px;
-    right: 25px;
-    transform: rotate(20deg);
-}
-
-.company-img-3 {
-    top: 0;
-    transform: rotate(5deg);
-}
-
-@media screen and (max-width: 992px) and (min-width: 767px) {
-    .company-img {
-        position: relative;
-        margin-right: 3%;
-    }
-
-    .company-img-1 {
-        top: initial;
-        left: initial;
-        transform: rotate(0);
-    }
-
-    .company-img-2 {
-        top: initial;
-        right: initial;
-        transform: rotate(0);
-    }
-
-    .company-img-3 {
-        top: initial;
-        transform: rotate(0);
-    }
-
-    .company-title {
-        font-size: 36px;
-    }
-
-    .company-text p {
-        font-size: 20px;
-
-    }
-}
-
-@media screen and (max-width: 766px) {
-    .company-img {
-        display: none;
-    }
-
-    .company-title {
-        font-size: 36px;
-        white-space: unset;
-    }
-
-    .company-text p {
-        font-size: 20px;
-
-    }
-}
-
-.collection {
-    text-shadow: 0 0 4px #333333;
-}
-
-.collection-item-title {
-    text-align: center;
-
-}
-
-.container-not-fixed {
-    table-layout: unset !important;
-}
-
-.modal-wrapper {
-    background-color: rgba(71, 71, 71, 0.63);
     width: 100%;
     height: 100%;
-    position: fixed;
-    top: 2%;
-    left: 2%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    animation: appear 1s ease-in-out;
-}
-
-.modal {
-    width: 50%;
     text-align: center;
-    position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px 90px;
-    text-shadow: none;
-    color: #000;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.modal p {
-    font-size: 26px;
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-.close-modal {
+/* Position the front and back side */
+.flip-card-front-white,
+.flip-card-front-black,
+.flip-card-back-black,
+.flip-card-back-white {
     position: absolute;
-    top: 3px;
-    right: 10px;
-    transition: all ease-in-out .3s;
-    font-size: 40px;
-    transform: rotate(45deg);
-
-}
-
-.close-modal:hover {
-    cursor: pointer;
-    transform: rotate(225deg);
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.main-form-title {
-    text-align: center;
-    text-shadow: 1px -1px black;
-}
-
-.main-form-text {
-    text-align: center;
-    text-shadow: 1px -1px black;
-    margin-bottom: 40px;
-}
-
-.main-info-text {
-    margin-bottom: 0;
-    text-decoration: underline;
-}
-
-.main-info {
-    text-shadow: 1px -1px black;
-}
-
-.main-info p {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.main-info-link {
-    margin-top: 19px;
-    color: #ffe4c3;
-}
-
-@media screen and (max-width: 1200px) {
-    .main-info {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .main-info-map {
-        width: 280px;
-    }
-
-    .main-form-title {
-        font-size: 30px;
-    }
-
-    .main-info-title {
-        font-size: 30px;
-    }
-}
-
-.round {
-    position: absolute;
-    border: 2px solid #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    transform: rotate(90deg);
-}
-
-#cta {
     width: 100%;
-    cursor: pointer;
-    position: absolute;
-    top: -3px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
 }
 
-#cta .arrow {
-    left: 30%;
+/* Style the front side (fallback if image is missing) */
+
+/* Style the back side */
+.flip-card-back-black {
+    transform: rotateY(180deg);
+    font-size: 10px;
 }
 
-.arrow {
-    position: absolute;
-    bottom: 0;
-    margin-left: 0px;
-    width: 12px;
-    height: 12px;
-    background-size: contain;
-    top: 15px;
-    animation: bounceAlpha 1.4s ease-in-out infinite;
+.flip-card-back-white {
+    transform: rotateY(180deg);
+    font-size: 10px;
 }
 
-.segunda {
-    margin-left: 8px;
-}
-
-.next {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
-}
-
-@keyframes bounceAlpha {
-    0% {
-        opacity: 1;
-        transform: translateX(0px) scale(1);
-    }
-
-    25% {
-        opacity: 0;
-        transform: translateX(10px) scale(0.9);
-    }
-
-    26% {
-        opacity: 0;
-        transform: translateX(-10px) scale(0.9);
-    }
-
-    55% {
-        opacity: 1;
-        transform: translateX(0px) scale(1);
-    }
-}
-
-.bounceAlpha {
-    animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.arrow.primera.bounceAlpha {
-    animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-delay: 0.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.round:hover .arrow {
-    animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.round:hover .arrow.primera {
-    animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-delay: 0.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.popup .close {
+    opacity: 1;
+    top: 60px !important;
+    right: 40px !important;
 }

@@ -11,7 +11,7 @@
   }
 
   &.fixedSpaces {
-    $gapSpace: 14px;
+    $gapSpace: $grid-gap/2;
 
     margin-left: -$gapSpace;
     margin-right: -$gapSpace;
