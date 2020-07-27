@@ -13,7 +13,7 @@
     font-weight: 400;
 }
 .about-us-img{
-    width:60%;
+    width:50%;
 }
 
 .promo-item {
@@ -113,4 +113,8 @@ p.promo-item-description {
         height: 300px !important;
     }
 
+}
+
+.panel.black {
+    background-color: rgb(80 80 80 / 80%)!important;
 }
